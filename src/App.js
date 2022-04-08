@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import { useState } from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+// import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
 import About from './Components/About';
 import Navbar from  './Components/Navbar.js' ;
@@ -46,16 +46,17 @@ function App() {
   }
   return (
     <>
-    <Router>
+    {/* <Router> */}
     <div className="App">
       <Navbar title="Text Utils2" mode = {mode} toggleMode={toggleMode} toggleTheme={toggleTheme}/>
       <Alert alert={alert}/>
-      <Routes>
-        <Route exact path="/" element={< TextForm mode = {mode} alert={showAlert} />} />
-        <Route exact path="/about" element={<About mode = {mode} />} />
-      </Routes>
+      < TextForm mode = {mode} alert={showAlert} />
+      {/* <Routes> */}
+        {/* <Route exact path="/" element={< TextForm mode = {mode} alert={showAlert} />} /> */}
+        {/* <Route exact path="/about" element={<About mode = {mode} />} /> */}
+      {/* </Routes> */}
     </div>
-    </Router>
+    {/* </Router> */}
     </>
   );
 }
