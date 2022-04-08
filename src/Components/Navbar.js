@@ -21,6 +21,8 @@ const Navbar = (props) => {
                 {/*<Link className="nav-link active" aria-current="page" to="/about">About</Link> */}
                 </li>
             </ul>
+            
+            <div className="d-flex mx-2 bg-success rounded" style={{height:'30px',width:'30px'}} onClick={()=>{props.toggleTheme('success')}}></div>
             <div className="d-flex mx-2 bg-primary rounded" style={{height:'30px',width:'30px'}} onClick={()=>{props.toggleTheme('primary')}}></div>
             <div className="d-flex mx-2 bg-danger rounded" style={{height:'30px',width:'30px'}} onClick={()=>{props.toggleTheme('danger')}}></div>
             <div className="d-flex mx-2 bg-warning rounded" style={{height:'30px',width:'30px'}} onClick={()=>{props.toggleTheme('warning')}}></div>
