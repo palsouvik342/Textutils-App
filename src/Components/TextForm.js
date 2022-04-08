@@ -40,7 +40,7 @@ export default function TextForm(props) {
             <label htmlFor="exampleInputEmail1"></label>
             <textarea name="name" id="myText" rows="10" value={text} className="form-control" onChange={handleChange} style={{backgroundColor:props.mode==='dark'?'#00004d':'#fff',color:props.mode==='dark'?'#fff':'#000'}}></textarea>
         </div>
-        <button disabled={text.length===0} className="btn btn-danger my-3 mx-3" onClick={handleUpClick}>Convert to Uppercase</button>
+        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={handleUpClick}>Convert to Uppercase</button>
         <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={handleLoClick}>Convert to Lowercase</button>
         <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={clearText}>Clear Text</button>
         <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={handleCopy}>Copy Text</button>
